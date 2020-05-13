@@ -1,0 +1,20 @@
+{
+  "name": "emapta",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "clean": "rm -rf ./dist",
+    "compile": "./node_modules/.bin/tsc -p tsconfig.build.json",
+    "lint": "./node_modules/.bin/tslint './src/**.*ts?(x)'",
+    "test": "./node_modules/.bin/jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^26.0.1",
+    "ts-jest": "^25.5.1",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.2"
+  }
+}
